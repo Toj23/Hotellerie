@@ -1,13 +1,19 @@
+/* ===========================================
+   IMPORTS ET POLICES
+   =========================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+/* ===========================================
+   RESET ET STYLES DE BASE
+   =========================================== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     color: #000;
 }
 
@@ -15,7 +21,10 @@ a {
     text-decoration: none;
 }
 
-header{
+/* ===========================================
+   HEADER ET NAVIGATION
+   =========================================== */
+header {
     width: 100%;
     padding: 2rem 3rem;
     padding-bottom: 4rem;
@@ -24,50 +33,53 @@ header{
     align-items: center;
 }
 
-.logo_div{
+.logo_div {
     width: 30%;
     font-size: 25px;
     font-weight: 500;
 }
 
-.logo{
+.logo {
     color: #000;
 }
 
-.logo_div span{
+.logo_div span {
     color: #d9b800;
 }
 
-ul{
-  width: 40%;  
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ul {
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-ul li a{
+ul li a {
     color: #000;
-    margin: 0 1rem; 
+    margin: 0 1rem;
     font-size: 18px;
     transition: .4s ease;
 }
 
-ul li .active{
+ul li .active {
     color: #d9b800;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: #bda103;
     transition: .4s ease;
 }
 
-.header_btn{
+.header_btn {
     width: 30%;
     margin: 0 0 0 2rem;
 }
 
-.btn{
+/* ===========================================
+   BOUTONS
+   =========================================== */
+.btn {
     background-color: #fff;
     text-transform: uppercase;
     color: #000;
@@ -79,18 +91,20 @@ ul li a:hover{
     transition: .4s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #000;
     color: #fff;
 }
 
-/* Styles pour la section home */
+/* ===========================================
+   SECTION ÉVÉNEMENTS
+   =========================================== */
 .event_section {
     padding: 2rem;
     width: 100%;
 }
 
-.event_section .container{
+.event_section .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 300px);
@@ -100,36 +114,37 @@ ul li a:hover{
     margin: 0 auto;
 }
 
-.event_section .item1{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.title h1 {
+    text-align: center;
 }
 
-.event_section .item2{
+/* Grille des événements */
+.event_section .item2 {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 }
 
-.event_section .item3{
+.event_section .item3 {
     border: 1px solid #000;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
 }
 
-.event_section .item4{
+.event_section .item4 {
     border: 1px solid #000;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
 }
 
-.event_section .item5{
+.event_section .item5 {
     border: 1px solid #000;
     grid-column: 3 / 4;
     grid-row: 2 / 4;
 }
 
-
-/* Styles pour le footer */
+/* ===========================================
+   FOOTER
+   =========================================== */
 footer {
     background-color: #ffffff;
     color: #000;
@@ -150,6 +165,7 @@ footer {
     padding-right: 2rem;
 }
 
+/* Newsletter */
 .newsletter h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -195,6 +211,7 @@ footer {
     background: #fff;
 }
 
+/* Informations de contact */
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -221,6 +238,7 @@ footer {
     font-size: 1.2rem;
 }
 
+/* Liens sociaux */
 .social-links {
     display: flex;
     gap: 1.5rem;
@@ -274,6 +292,9 @@ footer {
     color: #666;
 }
 
+/* ===========================================
+   OPTIMISATIONS D'IMAGE
+   =========================================== */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .slide img {
         image-rendering: -webkit-optimize-contrast;
@@ -281,9 +302,9 @@ footer {
     }
 }
 
-
-
-/* Media Queries pour le footer */
+/* ===========================================
+   MEDIA QUERIES - RESPONSIVE
+   =========================================== */
 @media (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
@@ -307,6 +328,3 @@ footer {
         justify-content: center;
     }
 }
-
-
-/* Media Queries */
