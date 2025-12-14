@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Événements - Dream Hotel</title>
+    <meta name="description" content="Organisez vos événements dans un cadre d'exception au Dream Hotel - Mariages, anniversaires, événements d'entreprise">
     <script src="https://kit.fontawesome.com/a92fa7bf01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="event.css">
 </head>
@@ -14,9 +15,8 @@
             <a href="index.html" class="logo"> Dream Hotel <span>.</span></a>
         </div>
         
-
         <ul>
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="services.html">Services</a></li>
@@ -26,41 +26,253 @@
         <div class="header_btn">
             <a href="#">
                 <button class="btn">
-                    Reserve
+                    Reserver
                 </button>
             </a>
         </div>
     </header>
 
-    <section class="event_section">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Événements d'Exception</h1>
+                <p class="hero-subtitle">Créez des souvenirs inoubliables dans un cadre prestigieux</p>
+                <button class="btn hero-btn">Demander un devis</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
         <div class="container">
-           <div class="title">
-                <h1>Evenements</h1>
-           </div>
-           <div class="item2"><img src="img/top-view-noodles-with-fried-vegetables-with-tomatoes-salad-other-dishes-table.jpg" alt=""></div>
-           <div class="item3">
-                <h3>Anniverssaires</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, nobis obcaecati natus itaque sunt at mollitia eius commodi optio ratione incidunt quasi, ex fugit voluptatibus asperiores assumenda aperiam praesentium expedita.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellendus rem quaerat, impedit asperiores, mollitia autem, ut velit placeat quasi nulla possimus aliquid dignissimos illum illo sit ipsa odio atque!
-                Magni nobis aliquam exercitationem debitis rerum iusto blanditiis veritatis, explicabo eos assumenda fugiat corrupti accusantium incidunt? Necessitatibus totam corrupti velit, ex sunt asperiores aliquam officia illo, sit ullam, esse libero?</p>
-                <a href="#">En savoir plus >>></a>
-           </div>
-           <div class="item4">
-                <h3>Mariage</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat omnis qui sunt molestiae natus ipsam iusto harum possimus inventore. Quae deleniti minus ullam ea laborum quis quidem alias ipsa et.
-                Eligendi cum dignissimos placeat, omnis earum qui sunt in doloribus consequatur, provident neque rem harum repellat hic esse nulla eos architecto quod! Et porro, tempore similique corrupti ut molestias corporis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem eius alias dolor distinctio quaerat eos itaque cumque. Labore, quidem? Officia eveniet similique qui eos sunt rerum neque vero suscipit.</p>
-                <a href="#">En savoir plus >>></a>
-           </div>
-           <div class="item5">
-                <h3>Traiteur</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis facilis adipisci consequatur nostrum, nemo repudiandae dicta tenetur maiores libero ipsa, quia labore, magnam explicabo consequuntur ipsam numquam nesciunt ratione.</p>
-                <p>Télécharger nos menus</p>
-                <a href="#"> >>Petit Dejeuner </a>
-                <a href="#"> >>Dejeuner </a>
-                <a href="#"> >>Dinner </a>
-                <a href="#"> >>Buffet </a>
-           </div>
+            <div class="intro-content">
+                <h2>Votre événement, notre passion</h2>
+                <p>Au Dream Hotel, nous transformons vos moments spéciaux en expériences extraordinaires. Notre équipe dédiée vous accompagne dans l'organisation de vos événements, qu'ils soient intimes ou grandioses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid Section -->
+    <section class="events-section">
+        <div class="container">
+            <div class="events-grid">
+                
+                <!-- Wedding Card -->
+                <div class="event-card large">
+                    <div class="event-image">
+                        <img src="img/luxury-hotel-reception-hall-lounge-restaurant-with-high-ceiling.jpg" alt="Mariage de luxe">
+                        <div class="event-overlay">
+                            <div class="event-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Mariages</h3>
+                        <p>Célébrez le plus beau jour de votre vie dans un cadre enchanteur. Nos salles de réception élégantes et notre service impeccable feront de votre mariage un moment magique.</p>
+                        <ul class="event-features">
+                            <li><i class="fas fa-check"></i> Salles de réception jusqu'à 300 personnes</li>
+                            <li><i class="fas fa-check"></i> Coordination complète de l'événement</li>
+                            <li><i class="fas fa-check"></i> Menu gastronomique personnalisé</li>
+                            <li><i class="fas fa-check"></i> Décoration sur mesure</li>
+                        </ul>
+                        <a href="#" class="event-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Birthday Card -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="img/modern-studio-apartment-design-with-bedroom-living-space.jpg" alt="Anniversaire">
+                        <div class="event-overlay">
+                            <div class="event-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Anniversaires</h3>
+                        <p>Fêtez vos anniversaires dans une atmosphère festive et raffinée. De l'intime au grandiose, nous créons l'ambiance parfaite.</p>
+                        <ul class="event-features">
+                            <li><i class="fas fa-check"></i> Espaces modulables</li>
+                            <li><i class="fas fa-check"></i> Animations personnalisées</li>
+                            <li><i class="fas fa-check"></i> Gâteaux d'exception</li>
+                        </ul>
+                        <a href="#" class="event-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Corporate Card -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="img/full-shot-man-carrying-baggage.jpg" alt="Événement d'entreprise">
+                        <div class="event-overlay">
+                            <div class="event-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Événements d'Entreprise</h3>
+                        <p>Séminaires, conférences, team building - nos espaces professionnels s'adaptent à tous vos besoins corporatifs.</p>
+                        <ul class="event-features">
+                            <li><i class="fas fa-check"></i> Équipement audiovisuel moderne</li>
+                            <li><i class="fas fa-check"></i> WiFi haut débit</li>
+                            <li><i class="fas fa-check"></i> Restauration professionnelle</li>
+                        </ul>
+                        <a href="#" class="event-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="catering-section">
+        <div class="container">
+            <div class="catering-content">
+                <div class="catering-text">
+                    <h2>Services Traiteur d'Excellence</h2>
+                    <p>Notre chef et son équipe créent des expériences culinaires sur mesure pour sublimer vos événements. Des cocktails raffinés aux banquets gastronomiques, chaque plat est une œuvre d'art.</p>
+                    
+                    <div class="menu-downloads">
+                        <h3>Téléchargez nos menus</h3>
+                        <div class="menu-buttons">
+                            <a href="#" class="menu-btn">
+                                <i class="fas fa-coffee"></i>
+                                <span>Petit Déjeuner</span>
+                            </a>
+                            <a href="#" class="menu-btn">
+                                <i class="fas fa-utensils"></i>
+                                <span>Déjeuner</span>
+                            </a>
+                            <a href="#" class="menu-btn">
+                                <i class="fas fa-wine-glass"></i>
+                                <span>Dîner</span>
+                            </a>
+                            <a href="#" class="menu-btn">
+                                <i class="fas fa-glass-cheers"></i>
+                                <span>Buffet</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catering-image">
+                    <img src="img/top-view-noodles-with-fried-vegetables-with-tomatoes-salad-other-dishes-table.jpg" alt="Service traiteur">
+                    <div class="catering-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Cuisine Gastronomique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Ils nous ont fait confiance</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Notre mariage au Dream Hotel était absolument parfait. L'équipe a été exceptionnelle du début à la fin. Nos invités en parlent encore !"</p>
+                    <div class="testimonial-author">
+                        <strong>Sophie & Marc</strong>
+                        <span>Mariage - Juin 2024</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Un lieu magnifique pour notre séminaire annuel. Service impeccable, équipements modernes et une cuisine délicieuse."</p>
+                    <div class="testimonial-author">
+                        <strong>Jean Dupont</strong>
+                        <span>Événement d'entreprise - Mars 2024</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"L'anniversaire de mes 50 ans restera gravé dans ma mémoire. Tout était parfait, de la décoration au service en passant par le repas."</p>
+                    <div class="testimonial-author">
+                        <strong>Marie Laurent</strong>
+                        <span>Anniversaire - Septembre 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Demandez votre devis personnalisé</h2>
+                    <p>Parlez-nous de votre projet et nous vous recontacterons dans les 24 heures</p>
+                </div>
+                <form class="event-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-type">Type d'événement *</label>
+                            <select id="event-type" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="wedding">Mariage</option>
+                                <option value="birthday">Anniversaire</option>
+                                <option value="corporate">Événement d'entreprise</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date souhaitée</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Nombre d'invités</label>
+                            <input type="number" id="guests" min="1">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Détails de votre projet *</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Envoyer ma demande</button>
+                </form>
+            </div>
         </div>
     </section>
 
